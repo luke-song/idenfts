@@ -1,7 +1,11 @@
-import React from "react";
+import { HeroSection } from "../components/componentsindex";
 
-const index = () => {
-  return <div>index</div>;
+const Home = () => {
+  return (
+    <div>
+      <HeroSection />
+    </div>
+  );
 };
 
-export default index;
+export default Home;
