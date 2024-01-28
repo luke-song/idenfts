@@ -3,6 +3,7 @@ import {
   Service,
   BigNFTSilder,
   Subscribe,
+  Title,
 } from "../components/componentsindex";
 
 import Style from "../styles/index.module.css";
@@ -13,6 +14,10 @@ const Home = () => {
       <HeroSection />
       <Service />
       <BigNFTSilder />
+      <Title
+        heading="Browsse by Category"
+        paragraph="Discover the most outstanding NFTs in all topics of life."
+      />
       <Subscribe />
     </div>
   );

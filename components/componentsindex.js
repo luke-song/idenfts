@@ -5,6 +5,7 @@ import HeroSection from "./HeroSection/HeroSection";
 import Service from "./Service/Service";
 import BigNFTSilder from "./BigNFTSilder/BigNFTSilder";
 import Subscribe from "./Subscribe/Subscribe";
+import Title from "./Title/Title";
 
 export {
   Button,
@@ -14,4 +15,5 @@ export {
   Service,
   BigNFTSilder,
   Subscribe,
+  Title,
 };
