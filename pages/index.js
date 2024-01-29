@@ -6,6 +6,7 @@ import {
   Title,
   Category,
   Filter,
+  NFTCard,
 } from "../components/componentsindex";
 
 import Style from "../styles/index.module.css";
@@ -21,6 +22,7 @@ const Home = () => {
         paragraph="Discover the most outstanding NFTs in all topics of life."
       />
       <Filter />
+      <NFTCard />
       <Title
         heading="Browse by Category"
         paragraph="Explore the NFTs in the most featured categories."
