@@ -10,6 +10,7 @@ import {
   Collection,
   FollowerTab,
   AudioLive,
+  Slider,
 } from "../components/componentsindex";
 
 import Style from "../styles/index.module.css";
@@ -26,10 +27,7 @@ const Home = () => {
       />
       <AudioLive />
       <FollowerTab />
-      <Title
-        heading="New Collection"
-        paragraph="Discover the most outstanding NFTs in all topics of life."
-      />
+      <Slider />
       <Collection />
       <Title
         heading="Featured NFTs"
