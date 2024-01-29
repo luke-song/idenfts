@@ -12,6 +12,7 @@ import {
   AudioLive,
   Slider,
   Brand,
+  Video,
 } from "../components/componentsindex";
 
 import Style from "../styles/index.module.css";
@@ -43,6 +44,7 @@ const Home = () => {
       <Category />
       <Subscribe />
       <Brand />
+      <Video />
     </div>
   );
 };
