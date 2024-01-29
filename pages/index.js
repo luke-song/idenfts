@@ -5,6 +5,7 @@ import {
   Subscribe,
   Title,
   Category,
+  Filter,
 } from "../components/componentsindex";
 
 import Style from "../styles/index.module.css";
@@ -16,8 +17,13 @@ const Home = () => {
       <Service />
       <BigNFTSilder />
       <Title
-        heading="Browsse by Category"
+        heading="Featured NFTs"
         paragraph="Discover the most outstanding NFTs in all topics of life."
+      />
+      <Filter />
+      <Title
+        heading="Browse by Category"
+        paragraph="Explore the NFTs in the most featured categories."
       />
       <Category />
       <Subscribe />
