@@ -7,6 +7,7 @@ import {
   Category,
   Filter,
   NFTCard,
+  Collection,
 } from "../components/componentsindex";
 
 import Style from "../styles/index.module.css";
@@ -21,6 +22,7 @@ const Home = () => {
         heading="Featured NFTs"
         paragraph="Discover the most outstanding NFTs in all topics of life."
       />
+      <Collection />
       <Filter />
       <NFTCard />
       <Title
