@@ -17,7 +17,7 @@ const Brand = () => {
           <a href="/">
             <p className={Style.Brand_box_left_logo}> IDENFTs</p>
           </a>
-          <h1>Earn free crypto with Ciscrypt</h1>
+          <h1>Earn free crypto with IDENFTs</h1>
           <p>A creative agency that lead and inspire.</p>
 
           <div className={Style.Brand_box_left_btn}>
