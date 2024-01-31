@@ -9,9 +9,9 @@ import { useRouter } from "next/router";
 //INTERNAL IMPORT
 import Style from "./Upload.module.css";
 import formStyle from "../AccountPage/Form/Form.module.css";
-import images from "../img/index.js";
+import images from "../img";
 import { Button } from "../components/componentsindex.js";
-import { DropZone } from "./uploadNFTIndex.js";
+import { DropZone } from "../UploadNFT/uploadNFTIndex.js";
 
 const UloadNFT = ({ uploadToIPFS, createNFT, uploadToPinata }) => {
   const [price, setPrice] = useState("");
