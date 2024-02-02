@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { DiJqueryLogo } from "react-icons/di";
 import { useRouter } from "next/router";
 
 //INTERNAL IMPORT
