@@ -33,14 +33,6 @@ contract Idenfts is ERC721URIStorage {
         bool sold
     );
 
-    modifier onlyOwner() {
-        require(
-            msg.sender == owner,
-            "only owner of the marketplace can change the listing price"
-        );
-        _;
-    }
-
     constructor() ERC721("Metaverse Tokens", "METT") {
         owner = payable(msg.sender);
     }
@@ -49,7 +41,6 @@ contract Idenfts is ERC721URIStorage {
     function updateListingPrice(uint256 _listingPrice)
         public
         payable
-        onlyOwner
     {
         require(
             owner == msg.sender,
@@ -132,11 +123,11 @@ contract Idenfts is ERC721URIStorage {
         );
         idToMarketItem[tokenId].owner = payable(msg.sender);
         idToMarketItem[tokenId].sold = true;
+        idToMarketItem[tokenId].seller = payable(address(0));
         _itemsSold.increment();
         _transfer(address(this), msg.sender, tokenId);
         payable(owner).transfer(listingPrice);
         payable(idToMarketItem[tokenId].seller).transfer(msg.value);
-        idToMarketItem[tokenId].seller = payable(address(0));
     }
 
     /* Returns all unsold market items */
